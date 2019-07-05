@@ -1,11 +1,11 @@
-# Project Title
+# NotificacaoComAlarme
 
 PROJETO ANDROID API 28 PARA NOTIFICAÇÕES COM ALARME
 
-## Getting Started
+## Mais sobre
 
 Crie notificações e executa tarefas no background com BroadcastReceiver e AlarmManager
 
-### Prerequisites
+### Necessário
 
 android api 15
