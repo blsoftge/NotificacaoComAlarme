@@ -12,11 +12,11 @@ public class AlarmReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.d(TAG, "alou jesus");
-        Toast.makeText(context, "Alou!!!", Toast.LENGTH_SHORT).show();
+        Log.d(TAG, "EXECUTANDO TAREFA");
+        Toast.makeText(context, "EXECUTANDO TAREFA!!!", Toast.LENGTH_SHORT).show();
 
         BLNotificacao blNotificacao = new BLNotificacao(context);
-        blNotificacao.criarNotificacao(context, "Bem vindo " + Math.random(), "alou testando 123");
+        blNotificacao.criarNotificacao(context, "NOTIFICAÇÃO!", "Esta é uma notificação do AlarmManager");
 
     }
 }

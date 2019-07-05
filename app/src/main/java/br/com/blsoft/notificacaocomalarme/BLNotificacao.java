@@ -23,8 +23,6 @@ public class BLNotificacao {
 
     private NotificationManagerCompat notificationManager;
 
-    private int notificacaoNumero = 0;
-
     public BLNotificacao(Context context) {
 
         createNotificationChannel(context);
@@ -38,9 +36,9 @@ public class BLNotificacao {
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, this.CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_launcher_background)
-                .setContentTitle(pTitulo + "num_" + this.notificacaoNumero)
+                .setContentTitle(pTitulo)
                 .setContentText(pConteudo)
-                .setNumber(this.notificacaoNumero++)
+                .setNumber((int) Math.random())
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
 
                 //toca um som
